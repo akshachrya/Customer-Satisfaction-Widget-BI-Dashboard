@@ -1,0 +1,512 @@
+})
+output$sap <- renderTable({
+table(data$`Additional products you think should be added in the product`)
+})
+## Dashboard 4
+output$catfi <- renderPlot({
+counts <- table(data$`Able to find information you were looking for`)
+p <-barplot(counts, main="Customer Able to Find Information", horiz=F,col=c("red3","springgreen3"))
+## Add text at top of bars
+# text(x=p,y=counts,pos=3,label=counts,cex=1,col="brown")
+## Add x-axis labels
+axis(3,at=p,tick=F,label=counts,las=1, line=-0.5, cex.axis=1,adj=1,col.axis="brown")
+})
+output$swltdpas <- renderPlot({
+counts <- table(data$`Satisfy with the literature to describe our products and services`)
+p <- barplot(counts, main="Satisfy with the literature to describe our products and services", horiz=F,col=c("green","pink","red","dark green","dark red"),
+legend = rownames(counts))
+## Add text at top of bars
+# text(x=p,y=counts,pos=3,label=counts,cex=1,col="brown")
+## Add x-axis labels
+axis(3,at=p,tick=F,label=counts,las=1, line=-0.5, cex.axis=1,adj=1,col.axis="brown")
+})
+output$atfiuwlfo <- renderTable({
+table(data$`Able to find information you were looking for(Other)`)
+})
+output$etnow <- renderPlot({
+counts <- table(data$`Easy to navigate our website`)
+p <- barplot(counts, main="Easy to Navigate Website", horiz=F,col=c("red","pink","dark red","dark green","green"))
+## Add text at top of bars
+# text(x=p,y=counts,pos=3,label=counts,cex=1,col="brown")
+## Add x-axis labels
+axis(3,at=p,tick=F,label=counts,las=1, line=-0.5, cex.axis=1,adj=1,col.axis="brown")
+})
+output$swdopos <- renderPlot({
+counts <- table(data$`Satisfy with the delivery of products or services`)
+p <- barplot(counts, main="Satisfy with Delivery of Products and Services", horiz=F,col=c("pink","green","red","dark green","dark red"),
+legend = rownames(counts))
+## Add text at top of bars
+# text(x=p,y=counts,pos=3,label=counts,cex=1,col="brown")
+## Add x-axis labels
+axis(3,at=p,tick=F,label=counts,las=1, line=-0.5, cex.axis=1,adj=1,col.axis="brown")
+})
+output$rcoup <- renderPlot({
+counts <- table(data$`Rate the comfortableness of using the product`)
+p <- barplot(counts, main="Rate Comfortableness of Using Product", horiz=F,col=c("green","dark red","pink","red","dark red"),
+legend = rownames(counts))
+## Add text at top of bars
+# text(x=p,y=counts,pos=3,label=counts,cex=1,col="brown")
+## Add x-axis labels
+axis(3,at=p,tick=F,label=counts,las=1, line=-0.5, cex.axis=1,adj=1,col.axis="brown")
+})
+# #Download the data
+# output$downloadData <- downloadHandler(
+#   filename = function() {
+#     paste("Data", Sys.Date(), ".csv", sep="")
+#   },
+#   content = function(file) {
+#     write.csv(data, file)
+#   }
+# )
+#
+})
+library("httpuv", lib.loc="~/R/win-library/3.5")
+remove.packages("httpuv", lib="~/R/win-library/3.5")
+shiny::runApp()
+runApp()
+data <- googlesheets::gs_key(sheet_key) %>%
+gs_read(ws = "Data", range = cell_rows(1:100))
+runApp()
+runApp()
+dat <- data.frame(table(data$`Quality of Service`))
+colnames(dat) <- c("Scale", "Count")
+p <- ggplot(data=dat1, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))+ geom_text(aes(label=Count), vjust=0)
+p <- ggplot(data=dat, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))+ geom_text(aes(label=Count), vjust=0)
+p <- p+ labs(x="",y="",title = "Quality of Service")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("pink", "green", "red","dark green","dark red"))
+p<- ggplotly(p)
+p
+rm(p)
+rm(dat)
+runApp()
+runApp()
+runApp()
+shiny::runApp()
+runApp()
+packageVersion("plotly")
+remove.packages("plotly")
+install.packages("plotly")
+install.packages("plotly")
+shiny::runApp()
+runApp()
+runApp()
+runApp()
+View(data)
+View(data)
+View(data)
+View(data)
+data <- googlesheets::gs_key(sheet_key) %>%
+gs_read(ws = "Data", range = cell_rows(1:100))
+View(data)
+View(data)
+data <- googlesheets::gs_key(sheet_key) %>%
+gs_read(ws = "Data", range = cell_rows(1:100))
+View(data)
+View(data)
+data
+data.frame(data)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+dat <- data.frame(table(data$`Able to find information you were looking for(Other)`))
+colnames(dat) <- c("Additional Product Suggested", "Times")
+runApp()
+View(dat)
+View(dat)
+dat <- data.frame(table(data$`Able to find information you were looking for(Other)`))
+table(data$`Able to find information you were looking for(Other)`)
+data$`Able to find information you were looking for(Other)`
+table(data$`Able to find information you were looking for(Other)`)
+runApp()
+runApp()
+dat <- data.frame(table(data$`Satisfy with the product features`))
+dat
+dat <- data.frame(table(data$`Able to find information you were looking for(Other)`))
+dat
+table(data$`Able to find information you were looking for(Other)`)
+runApp()
+table(data$`Additional products you think should be added in the product`)
+runApp()
+runApp()
+dat <- data.frame(table(data$`Additional products you think should be added in the product`))
+colnames(dat) <- c("Suggested Product","Suggested by")
+runApp()
+?order
+runApp()
+?dataTableOutput
+runApp()
+runApp()
+dat <-data.frame(data)
+dat
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+dat <- data.frame(table(data$`Process of getting problem resolved`))
+colnames(dat) <- c("Scale", "Count")
+p <- ggplot(data=dat, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))
+p
+runApp()
+rm(dat)
+rm(p)
+runApp()
+dat2 <- data.frame(table(data$`Process of getting problem resolved`))
+colnames(dat2) <- c("Scale", "Count")
+p <- ggplot(data=dat2, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))
+p <- p+ labs(x="",y="",title = "Process of getting problem resolved")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("pink", "green", "red","dark green","dark red"))
+p<- ggplotly(p)
+p
+dat2 <- data.frame(table(data$`Process of getting problem resolved`))
+colnames(dat2) <- c("Scale", "Count")
+p <- ggplot(data=dat2, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))+ geom_text(aes(label=Count), vjust=0)
+p <- p+ labs(x="",y="",title = "Process of getting problem resolved")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("pink", "green", "red","dark green","dark red"))
+p<- ggplotly(p)
+p
+dat2 <- data.frame(table(data$`Process of getting problem resolved`))
+colnames(dat2) <- c("Scale", "Count")
+p <- ggplot(data=dat2, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))+ geom_text(aes(label=Count), vjust=1)
+p <- p+ labs(x="",y="",title = "Process of getting problem resolved")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("pink", "green", "red","dark green","dark red"))
+ggplotly(p)
+?geom_text
+dat2 <- data.frame(table(data$`Process of getting problem resolved`))
+colnames(dat2) <- c("Scale", "Count")
+p <- ggplot(data=dat2, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))+ geom_text(aes(label=Count), vjust=1,label.size = 0.25)
+p <- p+ labs(x="",y="",title = "Process of getting problem resolved")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("pink", "green", "red","dark green","dark red"))
+ggplotly(p)
+dat2 <- data.frame(table(data$`Process of getting problem resolved`))
+colnames(dat2) <- c("Scale", "Count")
+p <- ggplot(data=dat2, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))+ geom_text(aes(label=Count), vjust=1,label.size=.2)
+p <- p+ labs(x="",y="",title = "Process of getting problem resolved")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("pink", "green", "red","dark green","dark red"))
+ggplotly(p)
+dat2 <- data.frame(table(data$`Process of getting problem resolved`))
+colnames(dat2) <- c("Scale", "Count")
+p <- ggplot(data=dat2, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))+ geom_text(aes(label=Count))
+p <- p+ labs(x="",y="",title = "Process of getting problem resolved")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("pink", "green", "red","dark green","dark red"))
+ggplotly(p)
+rm(dat)
+rm(dat2)
+rm(p)
+shiny::runApp()
+runApp()
+datatable(data=mytable,options=list(scrollX=T))
+mytable <-data.frame(data)
+datatable(data=mytable,options=list(scrollX=T))
+runApp()
+runApp()
+install.packages("XLConnect")
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+install.packages("Cairo")
+install.packages("grDevices")
+install.packages("grDevices")
+install.packages("grDevices")
+install.packages("grDevices")
+install.packages("grDevices")
+install.packages("grDevices")
+install.packages("grDevices")
+shiny::runApp()
+runApp()
+runApp()
+shiny::runApp()
+runApp()
+dat <- data.frame(table(data$`Satisfy with the product features`))
+colnames(dat) <- c("Scale", "Count")
+p <- ggplot(data=dat, aes(x=Scale,y=Count)) +
+geom_bar(stat = "identity",aes(fill=Scale))
+p <- p+ labs(x="",y="",title = "Satisfy with the product features")
+p<- p + theme_bw()
+p <- p+theme(legend.text=element_text(size=10), legend.title=element_text(size=14))
+p <- p + theme(axis.text.x=element_text(angle=0, colour="grey20", face="bold", size=10),
+axis.text.y=element_text(colour="grey20", face="bold", hjust=1, vjust=0.8, size=10),
+axis.title.x=element_text(colour="grey20", face="bold", size=12),
+axis.title.y=element_text(colour="grey20", face="bold", size=12))
+p <- p+scale_fill_manual(values=c("dark green","dark red"))
+p<- ggplotly(p)
+p
+rm(p)
+rm(dat)
+runApp()
+runApp()
+install.packages("plotly")
+install.packages("plotly")
+shiny::runApp()
+runApp()
+runApp()
+box
+?box
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+dat <- data.frame(table(data$`Able to find information you were looking for(Other)`))
+colnames(dat) <- c("Queries","Queries by")
+dat
+table(data$`Able to find information you were looking for(Other)`)
+rm(dat)
+runApp()
+runApp()
+runApp()
+table(data$`Able to find information you were looking for(Other)`)
+dat <- data.frame(table(data$`Able to find information you were looking for(Other)`))
+dat
+runApp()
+dat <- data.frame(table(data$`Able to find information you were looking for(Other)`,data$Email))
+dat
+runApp()
+dat <- data.frame(table(data$`Able to find information you were looking for(Other)`,data$Email))
+dat
+colnames(dat) <-c("Queries","Email","Times")
+dat
+dat <- dat[,c("Queries","Email")]
+dat
+rm(dat)
+table(data$`Able to find information you were looking for(Other)`,data$Email)
+runApp()
+data[c(data$`Full Name`,data$`Able to find information you were looking for(Other)`)]
+table(data[c(data$`Full Name`,data$`Able to find information you were looking for(Other)`)])
+?cbind
+cbind(1,1:7)
+cbind(data$`Full Name`,data$`Able to find information you were looking for(Other)`)
+runApp()
+dat <- cbind(data$`Full Name`,data$`Able to find information you were looking for(Other)`)
+colnames(dat) <-c("Query by","Query")
+dat
+data <- googlesheets::gs_key(sheet_key) %>%
+gs_read(ws = "Data", range = cell_rows(1:100))
+dat <- cbind(data$`Full Name`,data$`Able to find information you were looking for(Other)`)
+dat <- cbind(data$`Full Name`,data$`Able to find information you were looking for(Other)`)
+colnames(dat) <-c("Query by","Query")
+colnames(dat) <-c("Query by","Query")
+dat
+dat[c("Query by","Query")]
+runApp()
+runApp()
+runApp()
+runApp()
+dat
+runApp()
+runApp()
+dat[,c("Queryby","Query")]
+dat[c("Queryby","Query")]
+dat<- dat !=NA
+dat
+dat <- !is.null(dat)
+dat
+runApp()
+runApp()
+data$Agegroup(data$Age<25) <- "Below 25"
+data[Age<25,Agegroup :="Below 25"]
+data[Age<25,Agegroup := "Below 25"]
+#Making Age Group
+data$AgeGroup <- data$Age
+data$AgeGroup <-ifelse((data$Age<25),"Below25",data$AgeGroup)
+View(data)
+View(data)
+runApp()
+runApp()
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency"))+geom_bar(stat="identity")
+bp <- bp+ coord_polar("y", start=0)
+bp
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency"))+geom_bar(stat="identity",fill="Frequency")
+bp <- bp+ coord_polar("y", start=0)
+bp
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency"))+geom_bar(stat="identity",aes(fill="Frequency"))
+bp <- bp+ coord_polar("y", start=0)
+bp
+dat
+data$AgeGroup <- data$Age
+data$AgeGroup <-ifelse((data$Age<25),"Below25",data$AgeGroup)
+data$AgeGroup <-ifelse((data$Age>=25 & data$Age<=40),"25-40",data$AgeGroup)
+data$AgeGroup <-ifelse((data$Age>40),"Above 40",data$AgeGroup)
+data$AgeGroup <- as.factor(data$AgeGroup)
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency"))+geom_bar(stat="identity",aes(fill="Age Group"))
+bp <- bp+ coord_polar("y", start=0)
+bp
+dat
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency",fill="Age Group"))+geom_bar(stat="identity")
+bp <- bp+ coord_polar("y", start=0)
+bp
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency",fill="Age Group"))+geom_bar(stat="identity")
+bp <- bp+ coord_polar("y", start=0)
+bp
+runApp()
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency",fill="Age Group"))+geom_bar(stat="identity")
+# bp <- bp+ coord_polar("y", start=0)
+bp
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age Group","Frequency")
+bp <- ggplot(data=dat,aes(x="Age Group",y="Frequency"))+geom_bar(stat="identity",aes(fill="Age Group"))
+# bp <- bp+ coord_polar("y", start=0)
+bp
+dat <- data.frame(table(data$AgeGroup))
+dat <- data.frame(table(data$AgeGroup))
+dat
+colnames(dat) <- c("Age Group","Frequency")
+dat
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age_Group","Frequency")
+bp <- ggplot(data=dat,aes(x=Age_Group,y=Frequency))+geom_bar(stat="identity",aes(fill="Frequency"))
+# bp <- bp+ coord_polar("y", start=0)
+bp
+dat <- data.frame(table(data$AgeGroup))
+colnames(dat) <- c("Age_Group","Frequency")
+bp <- ggplot(data=dat,aes(x=Age_Group,y=Frequency))+geom_bar(stat="identity",aes(fill="Frequency"))
+bp <- bp+ coord_polar("y", start=0)
+bp
+runApp()
+runApp()
+runApp()
+runApp()
+install.packages("scales")
+install.packages("scales")
+install.packages("scales")
+install.packages("scales")
+shiny::runApp()
+runApp()
+shiny::runApp()
+runApp()
+library(scales) #for pie chart
+install.packages("scales")
+runApp()
+runApp()
+runApp()
+runApp()
+rm(bp)
+rm(dat)
+shiny::runApp()
+runApp()
+runApp()
+dat12 <- data.frame(table(data$`Knowledge of customer service representative`))
+colnames(dat12) <- c("Scale", "Count")
+p <- ggplot(data=dat12, aes(x=Scale, y=Count, group=1)) +
+geom_line(color="orange") +geom_point()
+p
+p
+rm(dat12)
+rm(p)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+count(data$Gender["Male"])
+count(data$Gender=="Male")
+dat <- data.frame(table(data$Gender))
+dat
+runApp()
+colnames(dat) <- c("Gender","Count")
+runApp()
+runApp()
+dat$Count["Female"]
+dat$Count[["Female"]]
+dat$Count
+dat$Count[2]
+runApp()

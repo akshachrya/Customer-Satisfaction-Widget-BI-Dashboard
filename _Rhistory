@@ -1,0 +1,512 @@
+"Rate the comfortableness of using the product",
+"Satisfy with the level of customer support we provide",
+"Satisfy with our company's efforts to meet your communication needs",
+"Methods prefer in interacting with the organization",
+"Methods prefer in interacting with the organization(Other)" ), trim = TRUE)
+runApp()
+runApp()
+Results <- reactive(c(Sys.Date(),input$fullname,input$email,input$phno,input$gender,input$age,input$a1,input$a2,input$a3,input$a4,input$a5,input$a6,input$a7,
+input$b1,input$b2,input$b3,input$c11,input$c12,input$c2,input$c3,input$d1,input$d2,input$e1,input$e2,input$e31,input$e32))
+Results
+Results()
+Results[]
+Resukts[1]
+Results[1]
+Results <- ({
+renderTable(rownames = F,colnames=F,
+data.frame(#panel1
+c("Full Name",input$fullname),
+c("Email",input$email),
+c("PhoneNumber",input$phno),
+c("Gender",input$gender),
+c("Age",input$age),
+#panel2
+c("Quality of Service",input$a1),
+c("Process of getting problem resolved",input$a2),
+c("Quality of customer service representative",input$a3),
+c("Time taken by customer service representative to solve my issue",input$a4),
+c("Knowledge of customer service representative",input$a5),
+c("Wait time for my question to be answered",input$a6),
+c("Posibility",input$a7),
+#panel3
+c("Satisfify with the product features",input$b1),
+c("Use of product features",input$b2),
+c("Additional products should be added",input$b3),
+#panel4
+c("Able to find information you were looking for",input$c11),
+c("Able to find information you were looking for(Other)",input$c12),
+c("Satisfy with the literature to describe our products and services",input$c2),
+c("Easy to navigate our website",input$c3),
+#panel5
+c("Satisfy with the delivery of products or services",input$d1),
+c("Rate the comfortableness of using the product",input$d2),
+#panel6
+c("Satisfy with the level of customer support we provide",input$e1),
+c("Satisfy with our company's efforts to meet your communication needs",input$e2),
+c("Methods prefer in interacting with the organization",input$e31),
+c("Methods prefer in interacting with the organization(Other)",input$e32)
+))
+})
+Results
+Results[1]
+Results <- reactive({
+data.frame(#panel1
+c("Full Name",input$fullname),
+c("Email",input$email),
+c("PhoneNumber",input$phno),
+c("Gender",input$gender),
+c("Age",input$age),
+#panel2
+c("Quality of Service",input$a1),
+c("Process of getting problem resolved",input$a2),
+c("Quality of customer service representative",input$a3),
+c("Time taken by customer service representative to solve my issue",input$a4),
+c("Knowledge of customer service representative",input$a5),
+c("Wait time for my question to be answered",input$a6),
+c("Posibility",input$a7),
+#panel3
+c("Satisfify with the product features",input$b1),
+c("Use of product features",input$b2),
+c("Additional products should be added",input$b3),
+#panel4
+c("Able to find information you were looking for",input$c11),
+c("Able to find information you were looking for(Other)",input$c12),
+c("Satisfy with the literature to describe our products and services",input$c2),
+c("Easy to navigate our website",input$c3),
+#panel5
+c("Satisfy with the delivery of products or services",input$d1),
+c("Rate the comfortableness of using the product",input$d2),
+#panel6
+c("Satisfy with the level of customer support we provide",input$e1),
+c("Satisfy with our company's efforts to meet your communication needs",input$e2),
+c("Methods prefer in interacting with the organization",input$e31),
+c("Methods prefer in interacting with the organization(Other)",input$e32)
+)
+})
+Results
+Results()
+Results[]
+Results <- reactive(c(Sys.Date(),input$fullname,input$email,input$phno,input$gender,input$age,input$a1,input$a2,input$a3,input$a4,input$a5,input$a6,input$a7,
+input$b1,input$b2,input$b3,input$c11,input$c12,input$c2,input$c3,input$d1,input$d2,input$e1,input$e2,input$e31,input$e32))
+head(Results())
+head(Results
+)
+head(Results[[]])
+head(Results)
+Results
+Results[[head()]]
+head(Results)
+runApp()
+Results[['1']]
+Results[['']]
+Results[[]]
+Results$1
+Results$fullname
+runApp()
+runApp()
+runApp()
+runApp()
+Results <- data.frame(
+#panel1
+c("Full Name",input$fullname),
+c("Email",input$email),
+c("PhoneNumber",input$phno),
+c("Gender",input$gender),
+c("Age",input$age),
+#panel2
+c("Quality of Service",input$a1),
+c("Process of getting problem resolved",input$a2),
+c("Quality of customer service representative",input$a3),
+c("Time taken by customer service representative to solve my issue",input$a4),
+c("Knowledge of customer service representative",input$a5),
+c("Wait time for my question to be answered",input$a6),
+c("Posibility",input$a7),
+#panel3
+c("Satisfify with the product features",input$b1),
+c("Use of product features",input$b2),
+c("Additional products should be added",input$b3),
+#panel4
+c("Able to find information you were looking for",input$c11),
+c("Able to find information you were looking for(Other)",input$c12),
+c("Satisfy with the literature to describe our products and services",input$c2),
+c("Easy to navigate our website",input$c3),
+#panel5
+c("Satisfy with the delivery of products or services",input$d1),
+c("Rate the comfortableness of using the product",input$d2),
+#panel6
+c("Satisfy with the level of customer support we provide",input$e1),
+c("Satisfy with our company's efforts to meet your communication needs",input$e2),
+c("Methods prefer in interacting with the organization",input$e31),
+c("Methods prefer in interacting with the organization(Other)",input$e32)
+)
+runApp()
+Output$Results <- data.frame(
+#panel1
+c("Full Name",input$fullname),
+c("Email",input$email),
+c("PhoneNumber",input$phno),
+c("Gender",input$gender),
+c("Age",input$age),
+#panel2
+c("Quality of Service",input$a1),
+c("Process of getting problem resolved",input$a2),
+c("Quality of customer service representative",input$a3),
+c("Time taken by customer service representative to solve my issue",input$a4),
+c("Knowledge of customer service representative",input$a5),
+c("Wait time for my question to be answered",input$a6),
+c("Posibility",input$a7),
+#panel3
+c("Satisfify with the product features",input$b1),
+c("Use of product features",input$b2),
+c("Additional products should be added",input$b3),
+#panel4
+c("Able to find information you were looking for",input$c11),
+c("Able to find information you were looking for(Other)",input$c12),
+c("Satisfy with the literature to describe our products and services",input$c2),
+c("Easy to navigate our website",input$c3),
+#panel5
+c("Satisfy with the delivery of products or services",input$d1),
+c("Rate the comfortableness of using the product",input$d2),
+#panel6
+c("Satisfy with the level of customer support we provide",input$e1),
+c("Satisfy with our company's efforts to meet your communication needs",input$e2),
+c("Methods prefer in interacting with the organization",input$e31),
+c("Methods prefer in interacting with the organization(Other)",input$e32)
+)
+runApp()
+Results <- reactive(data.frame(
+#panel1
+c("Full Name",input$fullname),
+c("Email",input$email),
+c("PhoneNumber",input$phno),
+c("Gender",input$gender),
+c("Age",input$age),
+#panel2
+c("Quality of Service",input$a1),
+c("Process of getting problem resolved",input$a2),
+c("Quality of customer service representative",input$a3),
+c("Time taken by customer service representative to solve my issue",input$a4),
+c("Knowledge of customer service representative",input$a5),
+c("Wait time for my question to be answered",input$a6),
+c("Posibility",input$a7),
+#panel3
+c("Satisfify with the product features",input$b1),
+c("Use of product features",input$b2),
+c("Additional products should be added",input$b3),
+#panel4
+c("Able to find information you were looking for",input$c11),
+c("Able to find information you were looking for(Other)",input$c12),
+c("Satisfy with the literature to describe our products and services",input$c2),
+c("Easy to navigate our website",input$c3),
+#panel5
+c("Satisfy with the delivery of products or services",input$d1),
+c("Rate the comfortableness of using the product",input$d2),
+#panel6
+c("Satisfy with the level of customer support we provide",input$e1),
+c("Satisfy with our company's efforts to meet your communication needs",input$e2),
+c("Methods prefer in interacting with the organization",input$e31),
+c("Methods prefer in interacting with the organization(Other)",input$e32)
+))
+Results
+Results[1]
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+input$b2
+output$b2
+runApp()
+runApp()
+ttt <- gs_auth()
+saveRDS(ttt,"ttt.rds")
+Data <- gs_new("Data") %>%
+gs_ws_rename(from = "Sheet1", to = "Data")
+Data <- Data %>%
+gs_edit_cells(ws = "Data", input = cbind("Time","Full Name", "Email", "Phone Number", "Gender","Age",
+"Quality of Service","Process of getting problem resolved",
+"Quality of customer service representative","Time taken by customer service representative to solve my issue",
+"Knowledge of customer service representative",
+"Wait time for my question to be answered","Posibility",
+"Satisfy with the product features","Product features use",
+"Additional products you think should be added in the product",
+"Able to find information you were looking for",
+"Able to find information you were looking for(Other)",
+"Satisfy with the literature to describe our products and services",
+"Easy to navigate our website",
+"Satisfy with the delivery of products or services",
+"Rate the comfortableness of using the product",
+"Satisfy with the level of customer support we provide",
+"Satisfy with our company's efforts to meet your communication needs",
+"Methods prefer in interacting with the organization",
+"Methods prefer in interacting with the organization(Other)" ), trim = TRUE)
+runApp()
+runApp()
+runApp()
+Data <- Data %>%
+gs_edit_cells(ws = "Data", input = cbind("Time","Full Name", "Email", "Phone Number", "Gender","Age",
+"Quality of Service","Process of getting problem resolved",
+"Quality of customer service representative","Time taken by customer service representative to solve my issue",
+"Knowledge of customer service representative",
+"Wait time for my question to be answered","Posibility",
+"Satisfy with the product features","Product features use",
+"Additional products you think should be added in the product",
+"Able to find information you were looking for",
+"Able to find information you were looking for(Other)",
+"Satisfy with the literature to describe our products and services",
+"Easy to navigate our website",
+"Satisfy with the delivery of products or services",
+"Rate the comfortableness of using the product",
+"Satisfy with the level of customer support we provide",
+"Satisfy with our company's efforts to meet your communication needs",
+"Methods prefer in interacting with the organization",
+"Methods prefer in interacting with the organization(Other)" ))
+runApp()
+runApp()
+Data <- Data %>%
+gs_edit_cells(ws = "Data", input = cbind("Time","Full Name", "Email", "Phone Number", "Gender","Age",
+"Quality of Service","Process of getting problem resolved",
+"Quality of customer service representative","Time taken by customer service representative to solve my issue",
+"Knowledge of customer service representative",
+"Wait time for my question to be answered","Posibility",
+"Satisfy with the product features","Product features use",
+"Additional products you think should be added in the product",
+"Able to find information you were looking for",
+"Able to find information you were looking for(Other)",
+"Satisfy with the literature to describe our products and services",
+"Easy to navigate our website",
+"Satisfy with the delivery of products or services",
+"Rate the comfortableness of using the product",
+"Satisfy with the level of customer support we provide",
+"Satisfy with our company's efforts to meet your communication needs",
+"Methods prefer in interacting with the organization",
+"Methods prefer in interacting with the organization(Other)" ),trim = T)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+install.packages("shinyalert")
+runApp()
+runApp()
+runApp()
+shiny::runApp()
+?shinyalert
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+rM(Results)
+rm(Results)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+?sidebarLayout
+?sidebarPanel
+?fluidPage
+runApp()
+runApp()
+runApp()
+?shinyUI
+?sidebarLayout
+?tabsetPanel
+runApp()
+runApp()
+?fluidPage
+runApp()
+?list
+runApp()
+runApp()
+runApp()
+runApp()
+shiny::runApp()
+runApp()
+?checkboxInput
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+?h5
+?cbind
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+?checkboxGroupInput
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+?as.array
+runApp()
+runApp()
+?as.vector
+runApp()
+runApp()
+runApp()
+?as.character
+runApp()
+runApp()
+checkboxGroupInput()
+?checkboxGroupInput
+runApp()
+runApp()
+runApp()
+?renderTable
+runApp()
+?renderText
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+?store
+??store
+?prepData
+??prepData
+runApp()
+runApp()
+?updateCheckboxGroupInput
+?as.shiny.appobj.character
+?as.tbl
+?checkboxInput
+?verbatimTextOutput
+runApp()
+runApp()
+runApp()
+shiny::runApp()
+runApp()
+ttt <- gs_auth()
+saveRDS(ttt,"ttt.rds")
+Data <- gs_new("Data") %>%
+gs_ws_rename(from = "Sheet1", to = "Data")
+Data <- Data %>%
+gs_edit_cells(ws = "Data", input = cbind("Time","Full Name", "Email", "Phone Number", "Gender","Age",
+"Quality of Service","Process of getting problem resolved",
+"Quality of customer service representative","Time taken by customer service representative to solve my issue",
+"Knowledge of customer service representative",
+"Wait time for my question to be answered","Posibility",
+"Satisfy with the product features","Property Management Usage",
+"Security Managment Usage","Communication Usage","Online Payments Usage",
+"Management of Tenant lease Usage",
+"Additional products you think should be added in the product",
+"Able to find information you were looking for",
+"Able to find information you were looking for(Other)",
+"Satisfy with the literature to describe our products and services",
+"Easy to navigate our website",
+"Satisfy with the delivery of products or services",
+"Rate the comfortableness of using the product",
+"Satisfy with the level of customer support we provide",
+"Satisfy with our company's efforts to meet your communication needs",
+"Methods prefer in interacting with the organization",
+"Methods prefer in interacting with the organization(Other)" ),trim = T)
+runApp()
+runApp()
+runApp()
+ttt <- gs_auth()
+saveRDS(ttt,"ttt.rds")
+Data <- gs_new("Data") %>%
+gs_ws_rename(from = "Sheet1", to = "Data")
+Data <- Data %>%
+gs_edit_cells(ws = "Data", input = cbind("Time","Full Name", "Email", "Phone Number", "Gender","Age",
+"Quality of Service","Process of getting problem resolved",
+"Quality of customer service representative","Time taken by customer service representative to solve my issue",
+"Knowledge of customer service representative",
+"Wait time for my question to be answered","Posibility",
+"Satisfy with the product features","Property Management Usage",
+"Security Managment Usage","Communication Usage","Online Payments Usage",
+"Management of Tenant lease Usage",
+"Additional products you think should be added in the product",
+"Able to find information you were looking for",
+"Able to find information you were looking for(Other)",
+"Satisfy with the literature to describe our products and services",
+"Easy to navigate our website",
+"Satisfy with the delivery of products or services",
+"Rate the comfortableness of using the product",
+"Satisfy with the level of customer support we provide",
+"Satisfy with our company's efforts to meet your communication needs",
+"Interacting with Phone","Interacting with Email","Interacting with Social Media","Interacting with VOIP Application",
+"Methods prefer in interacting with the organization(Other)" ),trim = T)
+runApp()
+runApp()
+runApp()
+runApp()
+?radioButtons
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+install.packages("colourpicker")
+runApp()
+runApp()
+runApp()
+runApp()
+?paste
+runApp()
+runApp()
+runApp()
+runApp()
+install.packages(shinythemes)
+install.packages("shinythemes")
+runApp()
+runApp()
+runApp()
+runApp()
+?textInput
+runApp()
+runApp()
+runApp()
+?paste
+?dataTableOutput
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+?textInput
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+rsconnect::showLogs()
+shiny::runApp()
